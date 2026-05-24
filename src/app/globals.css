@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+:root {
+  --background: #050A1A;
+  --foreground: #ffffff;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+@keyframes orbit {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.animate-orbit {
+  animation: orbit 100s linear infinite;
+}
+
+.text-glow {
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+.brand-gradient {
+  background: linear-gradient(135deg, #0047FF 0%, #00E0FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
